@@ -23,8 +23,10 @@ def f_associate(x):
         return 2
     elif x.age <= df_threshold.loc['thr_4'][sex]:
         return 3
-    else:
+    elif x.age <= df_threshold.loc['thr_5'][sex]:
         return 4
+    else:
+        return 5
 
 df_task = load_task('phenotype.csv')
 df_task['ordered_LR_prediction'] = df_task[['age', 'gender']].apply(f_associate, axis=1)
