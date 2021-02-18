@@ -39,7 +39,7 @@ def f_(t):
     elif t in grading_negative:
         return 0
     else:
-        return -1
+        return np.nan
 
 grading_positive = [1, 2, 3, 4, 5]
 grading_negative = [-1, -2, -3, -4, 5]
