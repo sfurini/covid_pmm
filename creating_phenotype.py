@@ -6,6 +6,7 @@ Created on Sun May 10 20:25:17 2020
 """
 
 import pandas as pd
+import numpy as np
 from utilities import load_task, plot_olr
 df_threshold = pd.read_csv('thresholds_olr.csv').set_index('thresholds')
 
