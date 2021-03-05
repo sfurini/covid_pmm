@@ -43,7 +43,7 @@ def f_(t):
         return np.nan
 
 grading_positive = [1, 2, 3, 4, 5]
-grading_negative = [-1, -2, -3, -4, 5]
+grading_negative = [-1, -2, -3, -4, -5]
 df_task['delta_grading'] = df_task['delta_grading_olr'].apply(f_)
 df_task.to_csv('age_sex_adjusted.csv')
 
